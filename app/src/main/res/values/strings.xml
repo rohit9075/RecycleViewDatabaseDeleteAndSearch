@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">RecycleViewDatabaseDeleteAndSearch</string>
+    <string name="menu_item_delete">Delete</string>
+</resources>
