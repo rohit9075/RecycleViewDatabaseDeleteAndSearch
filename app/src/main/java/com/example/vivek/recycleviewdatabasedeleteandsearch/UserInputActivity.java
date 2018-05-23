@@ -10,14 +10,12 @@ import android.widget.Toast;
 
 public class UserInputActivity extends AppCompatActivity implements View.OnClickListener {
 
+    private final AppCompatActivity activity = UserInputActivity.this;
     private TextInputEditText mTextInputEditTextFirstName;
     private TextInputEditText mTextInputEditTextSecondName;
     private Button mButtonSubmit, mButtonUserList;
     private ListDataModel listDataModel;
     private DatabaseHelper databaseHelper;
-
-
-    private final AppCompatActivity activity = UserInputActivity.this;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,10 +47,10 @@ public class UserInputActivity extends AppCompatActivity implements View.OnClick
 
 
     private void initiateView() {
-        mTextInputEditTextFirstName = (TextInputEditText) findViewById(R.id.textInputEditText_first_name);
-        mTextInputEditTextSecondName = (TextInputEditText) findViewById(R.id.textInputEditText_second_name);
-        mButtonSubmit = (Button) findViewById(R.id.button_submit);
-        mButtonUserList = (Button) findViewById(R.id.button_userList);
+        mTextInputEditTextFirstName = findViewById(R.id.textInputEditText_first_name);
+        mTextInputEditTextSecondName = findViewById(R.id.textInputEditText_second_name);
+        mButtonSubmit = findViewById(R.id.button_submit);
+        mButtonUserList = findViewById(R.id.button_userList);
 
     }
 
