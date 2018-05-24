@@ -33,6 +33,7 @@ public class UserInputActivity extends AppCompatActivity implements View.OnClick
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
+            // submit button click event
             case R.id.button_submit:
                 postDataToDatabase();
                 emptyInputEditText();
